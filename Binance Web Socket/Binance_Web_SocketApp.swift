@@ -11,7 +11,7 @@ import SwiftUI
 struct Binance_Web_SocketApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CryptoView()
         }
     }
 }

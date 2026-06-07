@@ -81,7 +81,7 @@ final class BinancePriceViewModel: ObservableObject {
     }
 
     var connectionText: String {
-        isConnected ? "Canli veri aliniyor" : "Baglanti bekleniyor"
+        isConnected ? "Live data is being received." : "Waiting for connection"
     }
 
     private func format(price: Decimal) -> String {

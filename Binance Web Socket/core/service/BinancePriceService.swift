@@ -15,18 +15,20 @@ actor BinancePriceService {
 
     
     private let endpoint: URL = {
-        // 1. Info.plist'ten String değeri oku
+    
         guard let urlString = Bundle.main.object(forInfoDictionaryKey: "urlKey") as? String else {
-            fatalError("Info.plist içinde 'BinanceTradeStreamURL' bulunamadı.")
+            fatalError("Info.plist  'urlKey' not found.")
         }
         
-        // 2. Okunan String'i URL'e çevir
+   
         guard let url = URL(string: urlString) else {
-            fatalError("Info.plist'teki URL geçersiz: \(urlString)")
+            fatalError("invalid: \(urlString)")
         }
         
         return url
     }()
+    
+    
     init(session: URLSession = .shared) {
         self.session = session
     }

@@ -10,9 +10,22 @@
 		17B295D72F9CC9E2001019E4 /* Binance Web Socket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binance Web Socket.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		174697CF2FD60ED100F306C6 /* Exceptions for "Binance Web Socket" folder in "Binance Web Socket" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Binance-Web-Socket-Info.plist",
+			);
+			target = 17B295D62F9CC9E2001019E4 /* Binance Web Socket */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		17B295D92F9CC9E2001019E4 /* Binance Web Socket */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				174697CF2FD60ED100F306C6 /* Exceptions for "Binance Web Socket" folder in "Binance Web Socket" target */,
+			);
 			path = "Binance Web Socket";
 			sourceTree = "<group>";
 		};
@@ -256,6 +269,7 @@
 				DEVELOPMENT_TEAM = DHW3U468H5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Binance-Web-Socket-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -292,6 +306,7 @@
 				DEVELOPMENT_TEAM = DHW3U468H5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Binance-Web-Socket-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

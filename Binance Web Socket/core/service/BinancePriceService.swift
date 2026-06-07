@@ -8,10 +8,25 @@
 import Foundation
 
 actor BinancePriceService {
-    private let endpoint = URL(string: "wss://stream.binance.com:9443/ws/btcusdt@trade")!
+     
+  //  private let endpoint = URL(string: "wss://stream.binance.com:9443/ws/btcusdt@trade")!
     private var webSocketTask: URLSessionWebSocketTask?
     private let session: URLSession
 
+    
+    private let endpoint: URL = {
+        // 1. Info.plist'ten String değeri oku
+        guard let urlString = Bundle.main.object(forInfoDictionaryKey: "urlKey") as? String else {
+            fatalError("Info.plist içinde 'BinanceTradeStreamURL' bulunamadı.")
+        }
+        
+        // 2. Okunan String'i URL'e çevir
+        guard let url = URL(string: urlString) else {
+            fatalError("Info.plist'teki URL geçersiz: \(urlString)")
+        }
+        
+        return url
+    }()
     init(session: URLSession = .shared) {
         self.session = session
     }

@@ -41,9 +41,6 @@ struct CryptoView: View {
                 .font(.system(size: 34, weight: .bold, design: .rounded))
                 .foregroundStyle(.white)
 
-            Text("Binance Spot WebSocket ile BTC/USDT anlik fiyat akisi")
-                .font(.subheadline)
-                .foregroundStyle(.white.opacity(0.75))
         }
     }
 

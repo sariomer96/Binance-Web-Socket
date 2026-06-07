@@ -8,8 +8,7 @@
 import Foundation
 
 actor BinancePriceService {
-     
-  //  private let endpoint = URL(string: "wss://stream.binance.com:9443/ws/btcusdt@trade")!
+      
     private var webSocketTask: URLSessionWebSocketTask?
     private let session: URLSession
 
